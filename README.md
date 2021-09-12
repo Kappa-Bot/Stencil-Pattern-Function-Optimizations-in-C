@@ -12,11 +12,12 @@ Todo...
 ### Non-Temporal Memory Writing  
 Todo...
 
-## OpenMP
+## Parallelization
+### OpenMP
 Multi-Threaded and Multi-Core Execution of the program. Paralellized by time instants.
-## OpenACC
+### OpenACC
 GPU Execution of the program. Every time instant of the problem requires one migration to the device.
-## CUDA
+### CUDA
 Still looking for that version of my program...
 
 ## Target
