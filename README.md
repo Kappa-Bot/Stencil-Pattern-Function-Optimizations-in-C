@@ -3,6 +3,12 @@ C program that calculates the movement equation of a 1-dimensional rope over tim
 
 ## Compilation
 ..... I'll put it here when I get to remember it
+### Usage
+./Stencil.o [V] [N] [I] [T]
+#### V stands for the Version of the program you want to execute
+#### N stands for Number of elements on the rope to store in memory (Total of N + 2)
+#### I stands for the number of time Instants to compute the equation over the rope
+#### T stands for the number Threads you want to execute in one of the MultiThread version.
 
 ## Optimizations
 ### Double and Triple Buffer
