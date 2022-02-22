@@ -1,14 +1,17 @@
 # Stencil-Rope-Optimizations
-C program that calculates the movement equation of a 1-dimensional rope over time, follows an stencil computational pattern. Optimizations are implemented to mitigate specific bottlenecks.
+C program that applies an equation of a 1-dimensional data buffer over time, which follows an stencil computational pattern. This work gives several approaches to mitigate specific bottlenecks through optimizations.
 
 ## Compilation
-..... I'll put it here when I get to remember it
-### Usage
+C Compiler: gcc
+Base Flags: -O3 -lm
+MultiThread: -fopenmp -fopenacc
+GPU: -fopenacc
+## Usage
 ./Stencil.o [V] [N] [I] [T]
-#### V stands for the Version of the program you want to execute
-#### N stands for Number of elements on the rope to store in memory (Total of N + 2)
-#### I stands for the number of time Instants to compute the equation over the rope
-#### T stands for the number Threads you want to execute in one of the MultiThread version.
+#### (V)ersion of the program you want to execute
+#### (N)umber of elements on the rope to store in memory (Total of N + 2)
+#### (I)nstants amount in order to compute the equation over the data
+#### (T)hreads to run on the program for the multithreaded version.
 
 ## Optimizations
 ### Double and Triple Buffer
