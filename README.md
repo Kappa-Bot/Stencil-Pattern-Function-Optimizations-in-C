@@ -1,11 +1,13 @@
-# Stencil-Rope-Optimizations
-C program that applies an equation of a 1-dimensional data buffer over time, which follows an stencil computational pattern. This work gives several approaches to mitigate specific bottlenecks through optimizations.
+# Optimization proposals over a Stencil Function in C
+C program that applies an equation of a 1-dimensional data buffer over time, which follows an stencil computational pattern.
+This work gives several approaches to mitigate specific bottlenecks through optimizations.
 
 ## Compilation
-C Compiler: gcc
-Base Flags: -O3 -lm
-MultiThread: -fopenmp -fopenacc
-GPU: -fopenacc
+#### C Compiler: gcc
+#### Base Flags: -O3 -lm
+#### MultiThread: -fopenmp -fopenacc
+#### GPU: -fopenacc
+
 ## Usage
 ./Stencil.o [V] [N] [I] [T]
 #### (V)ersion of the program you want to execute
@@ -14,9 +16,9 @@ GPU: -fopenacc
 #### (T)hreads to run on the program for the multithreaded version.
 
 ## Optimizations
-### Double and Triple Buffer
+### Multiple Buffer
 Todo...
-### Time Blocking (2-3-...)
+### Time Blocking
 Todo...
 ### Non-Temporal Memory Writing  
 Todo...
@@ -31,7 +33,7 @@ Still looking for that version of my program...
 
 ## Target
 CPU: Intel Nehalem, 2 threads per core, 4 cores, 1 socket 
-GPU: ... Pascal (don't totally remember)
+GPU: ... Pascal (barely remember...)
 
 ## Results
 ... Reports + Graphics + etc. When I remember where did I put'em
